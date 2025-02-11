@@ -10,8 +10,8 @@ export default function Home() {
       <Hero />
       <ServicesGrid />
       <BeforeAfter 
-        beforeImage="/images/before.jpg"
-        afterImage="/images/after.jpg"
+        beforeImage="/ct510/images/before.jpg"
+        afterImage="/ct510/images/after.jpg"
         title="Office Cleaning Transformation"
       />
       <QuoteForm />

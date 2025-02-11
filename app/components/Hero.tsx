@@ -8,17 +8,17 @@ const SLIDE_DURATION = 5000; // 5 seconds per slide
 
 export default function Hero() {
   const slides = [
-    { url: '/images/hero-bg-1.jpg', position: 'top 20% left 50%' },
-    { url: '/images/hero-bg-2.jpg', position: 'top' },
-    { url: '/images/hero-bg-3.jpg', position: 'center' },
-    { url: '/images/hero-bg-4.jpg', position: 'center 20%' },
-    { url: '/images/hero-bg-5.jpg', position: 'center' },
-    { url: '/images/hero-bg-6.jpg', position: 'center' },
-    { url: '/images/hero-bg-7.jpg', position: 'top center' },
-    { url: '/images/hero-bg-8.jpg', position: 'center' },
-    { url: '/images/hero-bg-9.jpg', position: 'center' },
-    { url: '/images/hero-bg-10.jpg', position: 'top center' },
-    { url: '/images/hero-bg-11.jpg', position: 'center' }
+    { url: '/ct510/images/hero-bg-1.jpg', position: 'top 20% left 50%' },
+    { url: '/ct510/images/hero-bg-2.jpg', position: 'top' },
+    { url: '/ct510/images/hero-bg-3.jpg', position: 'center' },
+    { url: '/ct510/images/hero-bg-4.jpg', position: 'center 20%' },
+    { url: '/ct510/images/hero-bg-5.jpg', position: 'center' },
+    { url: '/ct510/images/hero-bg-6.jpg', position: 'center' },
+    { url: '/ct510/images/hero-bg-7.jpg', position: 'top center' },
+    { url: '/ct510/images/hero-bg-8.jpg', position: 'center' },
+    { url: '/ct510/images/hero-bg-9.jpg', position: 'center' },
+    { url: '/ct510/images/hero-bg-10.jpg', position: 'top center' },
+    { url: '/ct510/images/hero-bg-11.jpg', position: 'center' }
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);

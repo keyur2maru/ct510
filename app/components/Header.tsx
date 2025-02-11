@@ -14,7 +14,7 @@ export default function Header() {
       <div className={styles.logo}>
         <Link href="/">
           <Image
-            src="/ct510/images/logo-green.svg"
+            src="/images/logo-green.svg"
             alt="The Clean Team 510"
             width={150}
             height={150}

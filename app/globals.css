@@ -1,21 +1,59 @@
+/* app/globals.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* White and Green Theme Variables */
+  --white-green-primary: #4CAF50;
+  --white-green-secondary: #ffffff;
+  --white-green-accent: #2E7D32;
+  --white-green-text: #333333;
+  --white-green-background: #ffffff;
+
+  /* Blue and Green Theme Variables */
+  --blue-green-primary: #2196F3;
+  --blue-green-secondary: #4CAF50;
+  --blue-green-accent: #1565C0;
+  --blue-green-text: #ffffff;
+  --blue-green-background: #f0f7ff;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Theme Classes */
+.white-green {
+  --primary: var(--white-green-primary);
+  --secondary: var(--white-green-secondary);
+  --accent: var(--white-green-accent);
+  --text: var(--white-green-text);
+  --background: var(--white-green-background);
+}
+
+.blue-green {
+  --primary: var(--blue-green-primary);
+  --secondary: var(--blue-green-secondary);
+  --accent: var(--blue-green-accent);
+  --text: var(--blue-green-text);
+  --background: var(--blue-green-background);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  color: var(--foreground);
+  color: var(--text);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }

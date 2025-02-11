@@ -1,0 +1,112 @@
+/* styles/ServicesGrid.module.css */
+.servicesSection {
+  padding: 6rem 2rem;
+  background-color: var(--background);
+}
+
+.servicesSection h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.serviceCard {
+  aspect-ratio: 4/3;
+  cursor: pointer;
+  background-color: var(--primary);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.cardInner {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 1.5rem;
+}
+
+.initialContent,
+.revealedContent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  transition: all 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.initialContent {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.revealedContent {
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+}
+
+.serviceCard:hover .initialContent {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.serviceCard:hover .revealedContent {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--secondary);
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--secondary);
+  text-align: center;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.revealedContent p {
+  color: var(--secondary);
+  font-size: 0.95rem;
+  line-height: 1.4;
+  text-align: center;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .servicesSection {
+    padding: 4rem 1rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .revealedContent p {
+    font-size: 0.9rem;
+  }
+}
